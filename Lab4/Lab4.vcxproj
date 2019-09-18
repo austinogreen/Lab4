@@ -22,6 +22,8 @@
     <ClCompile Include="Driller.cpp" />
     <ClCompile Include="DrillingRecord.cpp" />
     <ClCompile Include="DrillingRecordArray.cpp" />
+    <ClCompile Include="Exceptions.cpp" />
+    <ClCompile Include="ResizableArray.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DrillingRecord.h" />
