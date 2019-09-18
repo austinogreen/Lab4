@@ -26,6 +26,8 @@
   <ItemGroup>
     <ClInclude Include="DrillingRecord.h" />
     <ClInclude Include="DrillingRecordArray.h" />
+    <ClInclude Include="Exceptions.h" />
+    <ClInclude Include="ResizableArray.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

@@ -26,10 +26,16 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DrillingRecordArray.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
     <ClInclude Include="DrillingRecord.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="DrillingRecordArray.h">
+    <ClInclude Include="Exceptions.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ResizableArray.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
