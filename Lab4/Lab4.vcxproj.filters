@@ -15,21 +15,21 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Lab3\Lab3\Driller.cpp">
+    <ClCompile Include="Driller.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Lab3\Lab3\DrillingRecord.cpp">
+    <ClCompile Include="DrillingRecord.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Lab3\Lab3\DrillingRecordArray.cpp">
+    <ClCompile Include="DrillingRecordArray.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Lab3\Lab3\DrillingRecord.h">
+    <ClInclude Include="DrillingRecord.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Lab3\Lab3\DrillingRecordArray.h">
+    <ClInclude Include="DrillingRecordArray.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
