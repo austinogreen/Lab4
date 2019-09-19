@@ -156,16 +156,33 @@ inline void ResizableArray<T> :: removeAt(unsigned long index) {
 		throw ExceptionIndexOutOfRange();
 	}
 
-	// Shifts data to the left
-	for (unsigned long i = index; i < (size - 1); i++) {
-		data[i] = data[i + 1];
+	// Creates new array
+	T* temp = new T[capacity];
+
+	// Creates an offset for the array
+	unsigned int offset = 0;
+
+	// Moves elements from orignal array to new array
+	// except for the chose one
+	for (unsigned int i = 0; i < size; i++) {
+		if (i == index) {
+			offset++;
+		}
+		else {
+			temp[i - offset] = data[i];
+		}
 	}
+
+	// Deletes old array
+	delete[] data;
 
 	// Decreases size
 	size--;
 
+	data = temp;
+
 	// Halves the capacity if the size less than half the capacity
-	if (size <= (capacity / 2)) {
+	if (size < (capacity / 2)) {
 		halveCapacity();
 	}
 
