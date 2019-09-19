@@ -5,12 +5,13 @@
 #include <iomanip>
 #include <vector>
 #include "DrillingRecord.h"
-#include "DrillingRecordArray.h"
+#include "ResizableArray.h"
+#include "Exceptions.h"
 
 int main() {
 
 	// The drilling array
-	DrillingRecordArray* drillingArray = new DrillingRecordArray();
+	ResizableArray<DrillingRecord>* drillingArray = new ResizableArray<DrillingRecord>();
 	DrillingRecord* drillingRecord = new DrillingRecord();
 
 	// Temperary string variable
@@ -110,6 +111,11 @@ int main() {
 
 	// Prints data (loop)
 	for (int i = (dataPoints - 1); i >= 0; i--) {
-		std::cout << drillingArray->get(i) << std::endl;
+		try {
+			std::cout << drillingArray->get(i) << std::endl;
+		}
+		catch (ExceptionIndexOutOfRange e) {
+			// It broke :(
+		}
 	}
 }
